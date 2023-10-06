@@ -20,7 +20,7 @@ app.get('/get-paket', function(req, res){
         else{
             res.status(200).json({
                 "success": true,
-                "message": "Sukses menampilkan data",
+                "message": "Sukses menampilkan semua data paket",
                 "data": results
             });
         }
@@ -69,7 +69,7 @@ app.post('/store-paket', function(req, res){
         else{
             res.status(200).json({
                 "success": true,
-                "message": "Sukses menyimpan data",
+                "message": "Sukses menyimpan data paket",
                 "data": results
             });
         }
