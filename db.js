@@ -4,8 +4,6 @@ const conn = mysql.createPool({
     user: "root",
     password: "iJspnELeoDw2euvyslIQ",
     database: "railway",
-    //charset: "utf8mb4",
-    //timezone: "+07:00",
     port: "7150"
 });
 
