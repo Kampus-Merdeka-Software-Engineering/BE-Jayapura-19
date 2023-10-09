@@ -32,24 +32,6 @@ app.get('/get-paket-by-resi', function(req, res){
     });
 })
 
-// API Menampilkan Komentar
-app.get('/get-komen', function(req, res){
-    const queryStr = "SELECT id, nama, komen, uploaded_at FROM komentar";
-    conn.query(queryStr, (err, results) => {
-        if (err){
-            console.log(err);
-            res.error(err.sqlMessage, res);
-        }
-        else{
-            res.status(200).json({
-                "success": true,
-                "message": "Sukses menampilkan komentar",
-                "data": results
-            });
-        }
-    });
-})
-
 // API Menyimpan Komen
 app.post('/store-komen', function(req, res){
     const param = req.body;
